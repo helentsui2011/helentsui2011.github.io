@@ -3,13 +3,8 @@ header {
     text-align: left;
 }
 
-li {
-    list-style-type: none;
-    float: left;
-    font-size: 18px;
-    line-height: 20px;
-    font-weight: 600;
-}
+
+/*fluff stuff LEFT TOP logo*/
 
 .logo {
     font-size: 30px;
@@ -29,6 +24,16 @@ li {
 
 }
 
+/*for nav bar*/
+
+li {
+    list-style-type: none;
+    float: left;
+    font-size: 18px;
+    line-height: 20px;
+    font-weight: 600;
+}
+
 ul {
     padding: 10px;
     margin: 0px;
@@ -42,6 +47,8 @@ li a {
     color: white;
 
 }
+
+/*link styling*/
 
 a {
     text-decoration: none;
@@ -59,7 +66,6 @@ body {
     background-color: white;
     margin: 0;
 }
-
 
 h1 {
     font-size: 30px;
@@ -86,10 +92,14 @@ h4 {
     font-size: 16px;
 }
 
+/*filter LEFT sidebar*/
+
 .filter {
     font-size: 16px;
     padding-left: 10px;
 }
+
+/*homepage intro text */
 
 #intro h1 {
     color: white;
@@ -99,24 +109,15 @@ h4 {
     padding: 100px 200px;
 }
 
+/* pillow stock images */
+
 .pillowtype {
     width: 100%;
     height: auto;
 }
 
 
-/*.grid {
-    height: 200px;
-    width: 100%;
-    grid-template-rows: 20% 1fr 1fr 1fr;
-    grid-template-columns: 25% 25% 25% 25%;
-}*/
-
-
-
-.orange {
-    color: #DC855F;
-}
+/*for all pages*/
 
 .container {
     width: 100%;
@@ -137,6 +138,8 @@ h4 {
 
 }
 
+/*detail.html grid and setting*/
+
 .detail-img {
     width: 100%;
 }
@@ -149,6 +152,8 @@ h4 {
 .detail-text {
     padding-right: 80px;
 }
+
+/*product.html page grid*/
 
 .grid  {
     display: grid;
@@ -165,6 +170,48 @@ h4 {
     font-weight: 500;
 }
 
+
+/*product detail page drop-down*/
+
+.dropdown {
+    position: relative;
+    display:block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: #f9f9f9;
+  min-width: 300px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  padding: 12px 16px;
+  z-index: 1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+
+/*add to cart button + hover effect*/
+
+.button:hover {
+    opacity: 0.8;
+}
+
+.button {
+  background-color: #DC855F;
+  border: none;
+  color: white;
+  padding: 15px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+}
+
+/*opacity when select pillow colors */
 .dot1 {
     height: 20px;
     width: 20px;
@@ -221,40 +268,6 @@ h4 {
     background-color: #D7ADA6;
 }
 
-.dropdown {
-    position: relative;
-    display:block;
-}
-
-.dropdown-content {
-  display: none;
-  position: absolute;
-  background-color: #f9f9f9;
-  min-width: 300px;
-  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-  padding: 12px 16px;
-  z-index: 1;
-}
-
-.dropdown:hover .dropdown-content {
-    display: block;
-}
-
-.button {
-  background-color: #DC855F;
-  border: none;
-  color: white;
-  padding: 15px 32px;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-}
-
-.button:hover {
-    opacity: 0.8;
-}
-
 .dot1-big:hover {
     opacity: 0.7;
 }
@@ -277,3 +290,4 @@ h4 {
 
 .dot3:hover {
     opacity: 0.7
+}

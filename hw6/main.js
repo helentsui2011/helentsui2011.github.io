@@ -1,12 +1,27 @@
 
 // when pressed add to cart
-
 function addCart() {
-    var countEl = document.getElementById("count");
     document.getElementById("add-item").innerHTML = "Added to Cart!";
-    console.log("hi");
-    document.getElementById("notif").style.backgroundColor = "white";
 }
+
+
+
+// number of cart items on right top 
+window.onload = function(){ 
+    var click = 0;
+    var cartButton = document.getElementById("add-item");
+    var display = document.getElementById("displayCount");
+    cartButton.onclick = function() {
+        click++; 
+        display.innerHTML = click;
+        console.log(click);
+        document.getElementById("displayCount").style.borderColor = 'white';
+        document.getElementById("displayCount").style.color = 'white';
+
+    }
+
+}
+   
 
 
 // element.innerHTML

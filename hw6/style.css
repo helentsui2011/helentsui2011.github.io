@@ -7,7 +7,7 @@ header {
 /*fluff stuff LEFT TOP logo*/
 
 .logo {
-    font-size: 30px;
+    font-size: 26px;
     font-weight: 600;
     padding: 12px;
     color: white;
@@ -24,22 +24,12 @@ header {
 
 }
 
-/*for cart items number*/
-
-/*.cartNum {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
-    border: 3px solid white;
-    margin: 6px;
-    display: inline-block;
-}*/
 /*for nav bar*/
 
 li {
     list-style-type: none;
     float: left;
-    font-size: 18px;
+    font-size: 16px;
     line-height: 20px;
     font-weight: 600;
 }
@@ -55,7 +45,7 @@ ul {
 
 li a {
     display: block;
-    padding: 12px 16px;
+    margin: 12px 16px;
     color: white;
 
 }
@@ -69,6 +59,7 @@ a {
 
 a:hover {
   background-color: #E29B7C;
+  border-radius: 15%;
 }
 
 body {
@@ -109,9 +100,9 @@ h4 {
     border: 1px solid #C3C3C3;
 }
 
+/*item count in cart */
+
 #displayCount {
-/*    border-width: 30px;
-    border-height:30px;*/
     border-radius: 50%;
     border: 2px solid transparent;
     padding: 6px 10px;
@@ -153,14 +144,14 @@ h4 {
 
 .product-sidebar {
     width: 20%;
-    padding-left: 20px;
-    padding-top: 5%;
+    padding-left: 2%;
+    padding-top: 2%;
 
 }
 
 .product-main {
     width: 80%;
-    padding-top: 5%;
+    padding-top: 2%;
     padding-left: 2%;
 
 }

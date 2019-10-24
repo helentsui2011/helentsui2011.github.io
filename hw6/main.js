@@ -16,6 +16,14 @@ function minus() {
   }
 }
 
+function activecolor(dot) {
+    dot_ids = ["dot1", "dot2", "dot3"];
+    for (i = 0 ; i < dot_ids.length ; ++i) {
+        document.getElementById(dot_ids[i]).style.borderColor='transparent';
+    }
+    document.getElementById(dot).style.borderColor='#000000';
+
+}
 
 window.onload = function(){ 
     var click = 0;
@@ -33,8 +41,9 @@ window.onload = function(){
         // count num of items added to cart
         click ++; 
         display.innerHTML = click;
-        document.getElementById("displayCount").style.borderColor = 'white';
-        document.getElementById("displayCount").style.color = 'white';
+        display.style.borderColor = 'white';
+        display.style.color = 'white';
+
 
     }
 
@@ -60,19 +69,6 @@ window.onload = function(){
 
 }
 
-
-
-
-// select item color 
-
-function activecolor(dot) {
-    dot_ids = ["dot1", "dot2", "dot3"];
-    for (i = 0 ; i < dot_ids.length ; ++i) {
-        document.getElementById(dot_ids[i]).style.borderColor='transparent';
-    }
-    document.getElementById(dot).style.borderColor='#000000';
-
-}
 
 
 

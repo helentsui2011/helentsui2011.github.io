@@ -2,6 +2,7 @@
 <html>
 
 <head>
+
     <title> Product Details </title>
 <!-- styles -->
     <link rel="stylesheet" type="text/css" href="style.css">
@@ -15,6 +16,7 @@
   
 <body>
     <header>
+
         <!-- nav bar -->
         <nav>
             <ul>
@@ -23,10 +25,8 @@
                 <li><a href="products.html"> PRODUCTS </a></li>
                 <li><a href="about.html">ABOUT</a></li>
                 <li style="float: right"><span id="displayCount">1</span>
-                    <!-- <span id="notif"></span> -->
                 </li>
-                <li style="float: right"><a href="cart.html">CART</a>
-                
+                <li style="float: right"><a href="cart.html">CART</a> 
             </ul>
         </nav>
     </header>
@@ -35,7 +35,6 @@
         <div class="container">
             
             <!-- LEFT filter sidebar --> 
-
             <div class="product-sidebar">
                 <h2> FILTERS </h2>
                 <h4 class="filter border"> Types </h4>
@@ -58,10 +57,9 @@
                 </div>
 
             <div class="detail-grid">
-               
-                <!-- LEFT product image -->
 
-                <img class="detail-img" src="yellow.jpg">
+                <!-- LEFT product image -->
+                <img id="detail-img" class="detail-img" src="yellow.jpg">
                 
                 <!-- RIGHT product description -->
                 <div class="detail-text">
@@ -72,8 +70,6 @@
                     <span class="dot-big" id="dot1" onclick="activecolor('dot1')"> </span>
                     <span class="dot-big" id="dot2" onclick="activecolor('dot2')"> </span>
                     <span class="dot-big" id="dot3" onclick="activecolor('dot3')"> </span>
-                    <p class="price"><b></b></p>
-                    
                 
                 <!-- quantity selection --> 
                     <h4> Quantity </h4>
@@ -83,18 +79,7 @@
                         <input type="button" value="+" id="plus" onclick="plus()">
                     </div>
 
-
-                    <!-- <div class="dropdown">
-                        <span><h4 class="filter"> Quantity </h4></span>
-                        <div class="dropdown-content">
-                            <p> 1 </p>
-                            <p> 2 </p>
-                            <p> 3 </p>
-                        </div>
-                    </div> -->
-                    <br>
-
-                    <!-- MATERIAL dropdown --> 
+                <!-- MATERIAL dropdown --> 
                     <h4> Material </h4>
                     <div class="select-style">
                         <select>
@@ -105,8 +90,6 @@
                         </select>
                     </div>
 
-
-
                     <br>
                     <button class="button" id="add-item" value="add to cart" onclick="addCart()">ADD TO CART</button>
                 </div> <!-- end of detail-text -->
@@ -115,5 +98,4 @@
         </div> <!-- end of container -->
     </main>
 </body>
-
 </html>

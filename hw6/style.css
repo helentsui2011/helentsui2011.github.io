@@ -159,7 +159,8 @@ h4 {
 /*detail.html grid and setting*/
 
 .detail-img {
-    width: 100%;
+    width: 500px;
+    height: auto;
 }
 
 .detail-grid {

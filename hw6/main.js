@@ -22,7 +22,7 @@ function minus() {
   }
 }
 
-// number of cart items on right top 
+// number of cart items on right top show up when added to cart
 window.onload = function(){ 
     var click = 0;
     var cartButton = document.getElementById("add-item");
@@ -34,6 +34,17 @@ window.onload = function(){
         document.getElementById("displayCount").style.borderColor = 'white';
         document.getElementById("displayCount").style.color = 'white';
 
+    }
+    dot1.onclick = function() {
+    document.getElementById("detail-img").src="brown.jpg";
+    }
+
+    dot2.onclick = function() {
+    document.getElementById("detail-img").src="yellow.jpg";
+    }
+
+    dot3.onclick = function() {
+    document.getElementById("detail-img").src="pink.jpg";
     }
 
 }
@@ -48,7 +59,18 @@ function activecolor(dot) {
     }
     document.getElementById(dot).style.borderColor='#000000';
 
+    var images = [
+            "brown.jpg",
+            "yellow.jpg",
+            "pink.jpg"    
+    ];
+
+    
+
+
 }
+
+
 
 
 

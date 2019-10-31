@@ -1,7 +1,6 @@
 // global variables
 
 var click = 0;
-
 var count = 0;
 var selectedMaterial= "";
 var selectedColor = "";
@@ -9,44 +8,60 @@ var price = "$9.99";
 
 
 // create object
-function Pillow(name, color, material, qty, url, id) {
+function Pillow(name, color, material, qty, url) {
     this.name = name;
     this.color = color;
     this.material = material;
     this.qty = qty;
     this.url = url;
     this.price = price;
-    this.id = id;
 }
 
 
 
 // add or subtract quantity 
-
 function plus() {
     count++;
     $('#count').val(count);
 }
-
 function minus() {
   if (count > 1) {
     count--;
     $('#count').val(count);
-  } 
+  }
 }
+
 
 function removeItem(id) {
     var data = JSON.parse(localStorage.getItem("pillows")); // object
-    if (data.length === 1) {
-        localStorage.clear();
+    console.log("data length: " + data.length);
+    console.log("this is id: " + id);
+
+    if (data == null || data.length == 0) return;
+    else if (data.length == 1) {
         $('#cart-detail').hide();
+        localStorage.clear();
+        cartLoad();
     } else {
         data = data.splice(id, 1);
         localStorage.setItem("pillows", JSON.stringify(data));
         cartLoad();
     }
-
 };
+
+
+    // if (data.length === 1) {
+    //     localStorage.clear();
+    //     $('#cart-detail').hide();
+    // } else {
+    //     data = data.splice(id, 1);
+    //     localStorage.setItem("pillows", JSON.stringify(data));
+    //     cartLoad();
+    // }
+
+
+
+
 
 // update item count on cart
 
@@ -106,13 +121,9 @@ $('#addCart').click(function() {
     productName = $('#productName').text();
     productSrc = selectedColor + ".jpg";
 
-
     // displaycount update
     click++;
     updateCount();
-    var newItem = $("<li></li>");
-    $('#one').append("<div id='two'>content</div>");
-    $('#one').append("<div id='three'>content</div>");
 
 
     var data = JSON.parse(localStorage.getItem("pillows")); // object
@@ -122,7 +133,6 @@ $('#addCart').click(function() {
     // push added item into storage
     data.push(new Pillow(productName, selectedColor, selectedMaterial, count, productSrc));
     localStorage.setItem("pillows", JSON.stringify(data));
-
 });
 
 
@@ -134,7 +144,7 @@ function cartLoad() {
     if (data != null) {
         var codeFinal = "";
         for (var i=0; i<data.length; i++) {
-        var code = `<div>
+            var code = `<div>
                     <div class="img"><a href="detail.html"><img class="displayImg" src="${data[i].url}"></a></div>
                 </div>
 
@@ -146,21 +156,21 @@ function cartLoad() {
                 </div>
 
                 <div class="quantity-btn">
-                    <input type="button" value="-" id="minus" onclick="minus()">
                     <input type="text" value="${data[i].qty}" id="displayQty">
-                    <input type="button" value="+" id="plus" onclick="plus()">
                     <input type="button" value="Remove" onclick="removeItem(${i})">
                 </div>`;
             codeFinal += code; // add html code together
             $('#cart-detail').append(code);
-
             // show price in order summary
             var sub = Number((i+1) * (data[i].qty) * 9.99);
             $("#subtotal").html(sub);
             var all = Number(sub + 5.00);
             $("#displayTotal").html(all);
         } 
+
         $('#cart-detail').html(codeFinal);
+
+
     }
 
 
@@ -183,15 +193,9 @@ function cartLoad() {
 
 
 
-window.onload = function() {     
-    
-    // finalPrice = Number($("#subtotal").val(p)) + Number($("#shipping").val()); 
-    // $('#totalPrice').html(finalPrice);
-
-    // updateCount();
-
+// window.onload = function() {     
 
  
-}
+// }
 
 

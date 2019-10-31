@@ -32,11 +32,10 @@ function minus() {
 }
 
 
+
+
 function removeItem(id) {
     var data = JSON.parse(localStorage.getItem("pillows")); // object
-    console.log("data length: " + data.length);
-    console.log("this is id: " + id);
-
     if (data == null || data.length == 0) return;
     else if (data.length == 1) {
         $('#cart-detail').hide();
@@ -48,16 +47,6 @@ function removeItem(id) {
         cartLoad();
     }
 };
-
-
-    // if (data.length === 1) {
-    //     localStorage.clear();
-    //     $('#cart-detail').hide();
-    // } else {
-    //     data = data.splice(id, 1);
-    //     localStorage.setItem("pillows", JSON.stringify(data));
-    //     cartLoad();
-    // }
 
 
 
@@ -159,6 +148,7 @@ function cartLoad() {
                     <input type="text" value="${data[i].qty}" id="displayQty">
                     <input type="button" value="Remove" onclick="removeItem(${i})">
                 </div>`;
+
             codeFinal += code; // add html code together
             $('#cart-detail').append(code);
             // show price in order summary

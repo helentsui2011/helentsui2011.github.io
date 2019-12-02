@@ -1,0 +1,93 @@
+body {
+    font-family: 'Work Sans', sans-serif;
+    background-color: black;
+    color: white;
+    margin: 0;
+    padding: 0;
+
+}
+
+li {
+    list-style-type: none;
+    float: left;
+    font-size: 14px;
+    line-height: 20px;
+    font-weight: 400;
+    margin: 12px 16px;
+}
+
+
+li a {
+    color: white;
+    float: right;
+}
+
+ul {
+    padding: 10px;
+    margin: 0px;
+    overflow: hidden;
+    /*box-shadow: 0px 8px 10px 0px rgba(0,0,0,0.2);*/
+}
+
+a {
+    text-decoration: none;
+    color: #c3c3c3;
+}
+
+
+/*homepage banners*/
+
+.home-container {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.home-img {
+    width: 100%;
+    display: inline;
+    object-fit: cover;
+    height: 200px;
+}
+
+.home-img:hover {
+    background-color: white;
+}
+
+
+.text-left {
+  position: absolute;
+  top: 30%;
+  left: 16px;
+  font-size: 48px;
+  font-weight: 500;
+  background-color: black;
+  padding: 10px;
+}
+
+/*grid for photo gallery page*/
+
+.gallery-grid {
+    display: grid;
+    grid-template-columns: 33% 33% 33%;
+    object-fit: scale-down;
+    max-height: 300px;
+
+
+}
+
+.gallery-img {
+    width: 100%;
+    display: inline;
+    max-width:100%;
+    max-height:100%;
+    align-self: center;
+    padding: 10px;
+}
+
+
+@media screen and (max-width: 600px) {
+  div.text-left {
+    font-size: 30px;
+  }
+}

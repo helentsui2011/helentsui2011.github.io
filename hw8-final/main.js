@@ -1,12 +1,26 @@
-// $('.home-image').click(function() {
-//     changeColor(this);
+
+// $('#gold').click(function() {
+//     selectedColor = 'gold';
+//     $("#detail-img").attr("src", "gold.jpg");
 // });
-
-// how to add a lightbox 
-// https://www.w3schools.com/howto/howto_js_lightbox.asp
-
 
 
 // window.onload = function() {
 //     if 
 // }
+
+// .getImageData();
+
+
+
+$('#myImg').click(function() {
+    $('#myModal').css("display", "block");
+    $("#img01").src = this.src;
+});
+
+// var span = $("#close")[0];
+
+
+$(".span").onclick = function() { 
+    $('#modal').css("display", "none");
+}

@@ -15,11 +15,10 @@
 
 $('#myImg').click(function() {
     $('#myModal').css("display", "block");
-    $("#img01").src = this.src;
+    $("#img01").attr("src", "ams0.jpg");
 });
 
 // var span = $("#close")[0];
-
 
 $(".span").onclick = function() { 
     $('#modal').css("display", "none");

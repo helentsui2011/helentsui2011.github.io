@@ -59,8 +59,6 @@ canvas.addEventListener("mousemove",function(e){
     // Draw the color and coordinates.
     document.getElementById("status").innerHTML = coord;
     document.getElementById("color").style.backgroundColor = hex;
-
-    for (i++, )
 },false);
 
 

@@ -42,7 +42,7 @@ function drawImageFromWebUrl(sourceurl){
 
 drawImageFromWebUrl("ams0.jpg");
 
-canvas.addEventListener("mousemove",function(e){
+canvas.addEventListener("click",function(e){
       var eventLocation = getEventLocation(this,e);
     var coord = "x=" + eventLocation.x + ", y=" + eventLocation.y;
     

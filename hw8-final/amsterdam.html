@@ -9,7 +9,6 @@
     <link href="https://fonts.googleapis.com/css?family=Work+Sans:300,400,500,600,700&display=swap" rel="stylesheet">
 
 
-
 </head>
 
 
@@ -26,7 +25,7 @@
 
     <div class="row">
         <div class="column">
-            <img id="myImg" src="images/ams1.jpg">
+            <img id="myImg" alt="Hotel in Red" src="images/ams1.jpg">
             <img class="gallery-img" src="images/ams2.jpg">
             <img class="gallery-img" src="images/ams3.jpg">
             <img class="gallery-img" src="images/ams4.jpg"> 
@@ -71,6 +70,23 @@
 <!-- javascript -->
     <script src="main.js" type="text/javascript"></script>
     <meta charset="UTF-8">
+
+<!-- color thief library-->
+
+    <script src="node_modules/colorthief/dist/color-thief.umd.js"></script>
+    <script>
+        const colorThief = new ColorThief();
+        const img = document.querySelector('img');
+
+        // Make sure image is finished loading
+        if (img.complete) {
+          colorThief.getColor(img);
+        } else {
+          image.addEventListener('load', function() {
+            colorThief.getColor(img);
+          });
+        }
+    </script>
 
 
 

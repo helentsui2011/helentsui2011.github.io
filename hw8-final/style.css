@@ -123,6 +123,10 @@ footer {
   transition: 0.3s;
 }
 
+img:hover{
+  opacity: 0.8;
+}
+
 #myImg:hover {
   opacity: 0.8;
 }

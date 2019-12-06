@@ -13,13 +13,34 @@
 
 
 
+var modalImg = document.getElementById("img01");
+var captionText = document.getElementById("caption");
+
 $('#myImg').click(function() {
     $('#myModal').css("display", "block");
-    $("#img01").attr("src", "ams0.jpg");
+    modalImg.src = this.src;
+    captionText.innerHTML = this.alt;
+
 });
 
-// var span = $("#close")[0];
+// click x to escape modal view
 
-$(".span").onclick = function() { 
-    $('#modal').css("display", "none");
+var span = document.getElementsByClassName("close")[0];
+span.onclick = function() { 
+    $('#myModal').css("display", "none");
 }
+
+
+
+// color thief testing
+
+
+
+
+// getColor(image [, quality])
+// Returns: [Number, Number, Number]
+
+
+
+
+

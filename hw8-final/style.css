@@ -110,12 +110,12 @@ h2 {
 .row {
   display: flex;
   flex-wrap: wrap;
-  padding: 0 8px;
+  padding: 0 68px;
 }
 
 footer {
   padding: 60px;
-  text-align: center
+  text-align: center;
 }
 
 #myImg {
@@ -123,8 +123,10 @@ footer {
   transition: 0.3s;
 }
 
-img:hover{
+.column img:hover{
   opacity: 0.8;
+  transform: scale(1.02);
+  transition: 0.1s;
 }
 
 #myImg:hover {
@@ -156,6 +158,12 @@ img:hover{
 .modal-content { 
   animation-name: zoom;
   animation-duration: 0.6s;
+}
+
+#caption {
+  text-align: center;
+  padding: 16px;
+  font-size: 14px;
 }
 
 /* The Close Button */
@@ -194,11 +202,24 @@ img:hover{
 
 /* responsive web */
 
-@media screen and (max-width: 600px) {
+@media screen and (max-width: 800px) {
   div.text-left {
     font-size: 30px;
   }
+  .column {
+    flex: 50%;
+    max-width:48%;
+  }
 }
+
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    flex: 100%;
+    max-width: 100%;
+  }
+
 
 /* about page */
 .welcome {

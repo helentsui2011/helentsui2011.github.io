@@ -19,9 +19,6 @@ function lightbox(imgs) {
    $('#myModal').css("display", "block");
     modalImg.src = imgs.src;
     captionText.innerHTML = imgs.alt;
-    canvas.width = imgs.width;
-    canvas.height = imgs.height;
-
 }
 
 // click x to escape modal view
@@ -29,7 +26,7 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     $('#myModal').css("display", "none");
 }
-
+ 
 
 
 // function draw(img) {
@@ -80,6 +77,8 @@ function drawImageFromWebUrl(sourceurl){
       });
       img.setAttribute("src", sourceurl);
 }
+
+drawImageFromWebUrl("ams0.jpg");
 
 
 canvas.addEventListener("mousemove",function(e){

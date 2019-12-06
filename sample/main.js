@@ -81,9 +81,5 @@ canvas.addEventListener("click",function(e){
     var hex = "#" + ("000000" + rgbToHex(pixelData[0], pixelData[1], pixelData[2])).slice(-6);
     
      document.getElementById("block1").style.backgroundColor = hex[i];
-    // Draw the color and coordinates.
 
-    // for (i=0; i < imgData.data.length; i++) {
-    //        
-    // }
 },false);

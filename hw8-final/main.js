@@ -81,6 +81,8 @@ function drawImageFromWebUrl(sourceurl){
       canvas.height = img.height;
 }
 
+drawImageFromWebUrl("ams0.jpg");
+
 
 canvas.addEventListener("mousemove",function(e){
       var eventLocation = getEventLocation(this,e);

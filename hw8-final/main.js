@@ -7,7 +7,6 @@
 
 window.onload = function() {
 
-
 }
 
 
@@ -20,6 +19,9 @@ function lightbox(imgs) {
    $('#myModal').css("display", "block");
     modalImg.src = imgs.src;
     captionText.innerHTML = imgs.alt;
+    canvas.width = imgs.width;
+    canvas.height = imgs.height;
+
 }
 
 // click x to escape modal view
@@ -77,13 +79,12 @@ function drawImageFromWebUrl(sourceurl){
           canvas.getContext("2d").drawImage(img, 0, 0, img.width, img.height, 0, 0, canvas.width, canvas.height);
       });
       img.setAttribute("src", sourceurl);
-      canvas.width = img.width;
-      canvas.height = img.height;
 }
 
 
 canvas.addEventListener("mousemove",function(e){
-      var eventLocation = getEventLocation(this,e);
+    
+    var eventLocation = getEventLocation(this,e);
     var coord = "x=" + eventLocation.x + ", y=" + eventLocation.y;
     
     // Get the data of the pixel according to the location generate by the getEventLocation function
@@ -105,7 +106,7 @@ canvas.addEventListener("mousemove",function(e){
 
 
 canvas.addEventListener("click",function(e){
-      var eventLocation = getEventLocation(this,e);
+    var eventLocation = getEventLocation(this,e);
     var coord = "x=" + eventLocation.x + ", y=" + eventLocation.y;
     
     // Get the data of the pixel according to the location generate by the getEventLocation function

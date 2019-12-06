@@ -62,7 +62,6 @@ canvas.addEventListener("mousemove",function(e){
 },false);
 
 
-
 // $('html,body').css('cursor','crosshair');
 
 canvas.addEventListener("click",function(e){

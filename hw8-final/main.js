@@ -14,6 +14,8 @@ var captionText = document.getElementById("caption");
 var modalImg = document.getElementById("expandedImg");
 
 
+
+
 function lightbox(imgs) {
    // modalImg.parentElement.style.display = "block";
    $('#myModal').css("display", "block");
@@ -26,6 +28,9 @@ var span = document.getElementsByClassName("close")[0];
 span.onclick = function() { 
     $('#myModal').css("display", "none");
 }
+
+
+
  
 
 
@@ -73,7 +78,7 @@ function drawImageFromWebUrl(sourceurl){
       var img = new Image();
       img.addEventListener("load", function () {
           // The image can be drawn from any source
-          canvas.getContext("2d").drawImage(img, 0, 0, img.width, img.height, 0, 0, canvas.width, canvas.height);
+          canvas.getContext("2d").drawImage(img, 300, 300, img.width, img.height, 0, 0, canvas.width, canvas.height);
       });
       img.setAttribute("src", sourceurl);
 }
@@ -122,6 +127,15 @@ canvas.addEventListener("click",function(e){
     // Draw the color and coordinates.
     document.getElementById("block1").style.backgroundColor = hex;
 },false);
+
+var verifyDark = getElementsByClassName(body); 
+
+$('#dark').click(function() {
+    $("body").css('color', 'red');
+    $("a").css('color', 'red');
+    $("body").css('backgroundColor', 'black');
+
+});
 
 
 

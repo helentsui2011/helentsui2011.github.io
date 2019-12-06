@@ -34,7 +34,6 @@ function drawImageFromWebUrl(sourceurl){
           canvas.getContext("2d").drawImage(img, 0, 0, img.width, img.height, 0, 0, canvas.width, canvas.height);
       });
       img.setAttribute("src", sourceurl);
-      // img.setAttribute("crossOrigin", "");
 }
 // Draw a base64 image because this is a fiddle, and if we try with an image from URL we'll get tainted canvas error
 // Read more about here : http://ourcodeworld.com/articles/read/182/the-canvas-has-been-tainted-by-cross-origin-data-and-tainted-canvases-may-not-be-exported
@@ -60,9 +59,13 @@ canvas.addEventListener("mousemove",function(e){
     // Draw the color and coordinates.
     document.getElementById("status").innerHTML = coord;
     document.getElementById("color").style.backgroundColor = hex;
+
+    for (i++, )
 },false);
 
 
+
+// $('html,body').css('cursor','crosshair');
 
 canvas.addEventListener("click",function(e){
       var eventLocation = getEventLocation(this,e);
@@ -78,7 +81,11 @@ canvas.addEventListener("click",function(e){
     }
     
     var hex = "#" + ("000000" + rgbToHex(pixelData[0], pixelData[1], pixelData[2])).slice(-6);
-    
+    var imgString = [];
+
     // Draw the color and coordinates.
-    document.getElementById("block1").style.backgroundColor = hex;
+    for (i=0; i < imgData.data.length; i++) {
+            document.getElementById("block1").style.backgroundColor = hex[i];
+
+    }
 },false);

@@ -63,6 +63,8 @@ function rgbToHex(r, g, b) {
     return ((r << 16) | (g << 8) | b).toString(16);
 }
 
+var newColor = colorThief.getColor("images/ams/ams1.jpg");
+console.log(newColor);
 // function drawImageFromWebUrl(sourceurl){
 //       var img = new Image();
 //       img.addEventListener("load", function () {

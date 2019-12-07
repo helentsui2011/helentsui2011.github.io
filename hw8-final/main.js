@@ -119,7 +119,7 @@ console.log(newColor);
 //     document.getElementById("block1").style.backgroundColor = hex;
 // },false);
 
-var verifyDark = getElementsByClassName(body); 
+// var verifyDark = getElementsByClassName("body"); 
 
 $('#dark').click(function() {
     $("body").css('color', 'red');

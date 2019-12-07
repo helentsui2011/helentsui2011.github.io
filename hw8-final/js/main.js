@@ -32,7 +32,6 @@ $('.dark').click(function() {
         $("body").css('background-color', "white");
         $("body").css('color', 'black');
         $("a").css('color', 'black');
-        console.log("turning white");
         } else {
             $("body").css("background-color", "black")
             $("body").css('color', 'white');
@@ -46,7 +45,7 @@ $('.dark').click(function() {
     
     var img = document.querySelector('img'),
         list = document.querySelector('ul'),
-        // section = document.querySelector('section'),
+        section = document.querySelector('section'),
         paletteReady = false;
         
     img.addEventListener('load', function() {

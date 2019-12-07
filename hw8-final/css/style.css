@@ -8,7 +8,7 @@ body {
 
 /*attributes for color palette*/
 
-section ul {
+section li {
   align-content: center;
   align-items: center;
   justify-content: center;
@@ -46,10 +46,6 @@ li {
     overflow: hidden;
 }
 
-li a { 
-    color: white;
-    float: right;
-}
 
 a {
     text-decoration: none;

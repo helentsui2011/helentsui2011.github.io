@@ -40,6 +40,13 @@ h2 {
   font-weight: 400;
 }
 
+header {
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  padding-left-right: 60%;
+}
+
 /*social media icon*/
 
 .fa {
@@ -57,6 +64,7 @@ h2 {
   color: white;
   display: flex
 }
+
 
 .home-img {
   width: 100%;
@@ -161,11 +169,16 @@ footer {
   display: block;
   width: 80%;
   max-width: 700px;
-}
-
-.modal-content { 
   animation-name: zoom;
   animation-duration: 0.6s;
+}
+
+
+
+.genColor {
+  width: 30px;
+  height: 30px;
+  background-color: white;
 }
 
 #caption {
@@ -194,17 +207,49 @@ footer {
 
 
 
+/* about page */
+.welcome {
+  text-align: center;
+  padding-top: 60px;
+}
+
+
+.box-container {
+  width: 100%;
+  display: flex;
+/*  position: relative;
+*/}
 
 
 
+.profile-left {
+  width: 30%;
+}
+
+#profilepic {
+  display: block;
+  max-width: 300px;
+  height: auto;
+  margin-left: 25%;
+}
+
+
+.bio-right {
+  align-content: center;
+  width: 70%;
+  max-width: 600px;
+  margin-left: 10%;
+  text-align: left;
+/*  display: wrap;
+*/}
 
 
 
-
-
-
-
-
+/* references 
+https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
+https://www.w3schools.com/howto/howto_css_modal_images.asp
+https://www.w3schools.com/howto/howto_js_lightbox.asp
+*/
 
 
 
@@ -216,7 +261,7 @@ footer {
   }
   .column {
     flex: 50%;
-    max-width:48%;
+    max-width: 48%;
   }
 }
 
@@ -228,38 +273,5 @@ footer {
     max-width: 100%;
   }
 
-
-/* about page */
-.welcome {
-  text-align: center;
-  padding-top: 60px;
-}
-
-.bio-right {
-  width: 60%;
-  margin-left: 10%;
-  text-align: left;
-/*  display: wrap;
-*/}
-
-
-
-.profile-left {
-  width: 40%;
-/*  display: wrap;
-*/}
-
-.profilepic {
-  width: 200px;
-  height: auto;
-  padding:10%;
-}
-
-
-/* references 
-https://www.w3schools.com/howto/howto_css_image_grid_responsive.asp
-https://www.w3schools.com/howto/howto_css_modal_images.asp
-https://www.w3schools.com/howto/howto_js_lightbox.asp
-*/
 
 

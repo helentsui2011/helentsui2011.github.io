@@ -18,6 +18,7 @@ span.onclick = function() {
     $('#myModal').css("display", "none");
 }
 
+var r = ["Saab", "Volvo", "BMW"];
 
 
  
@@ -34,28 +35,28 @@ span.onclick = function() {
 // }
 
 
-var canvas = document.getElementById("canvas");
+// var canvas = document.getElementById("canvas");
 
-function getElementPosition(obj) {
-    var curleft = 0, curtop = 0;
-    if (obj.offsetParent) {
-        do {
-            curleft += obj.offsetLeft;
-            curtop += obj.offsetTop;
-        } while (obj = obj.offsetParent);
-        return { x: curleft, y: curtop };
-    }
-    return undefined;
-}
+// function getElementPosition(obj) {
+//     var curleft = 0, curtop = 0;
+//     if (obj.offsetParent) {
+//         do {
+//             curleft += obj.offsetLeft;
+//             curtop += obj.offsetTop;
+//         } while (obj = obj.offsetParent);
+//         return { x: curleft, y: curtop };
+//     }
+//     return undefined;
+// }
 
-function getEventLocation(element,event){
-        var pos = getElementPosition(element);
+// function getEventLocation(element,event){
+//         var pos = getElementPosition(element);
     
-    return {
-        x: (event.pageX - pos.x),
-        y: (event.pageY - pos.y)
-    };
-}
+//     return {
+//         x: (event.pageX - pos.x),
+//         y: (event.pageY - pos.y)
+//     };
+// }
 
 function rgbToHex(r, g, b) {
     if (r > 255 || g > 255 || b > 255)
@@ -63,8 +64,10 @@ function rgbToHex(r, g, b) {
     return ((r << 16) | (g << 8) | b).toString(16);
 }
 
-var newColor = colorThief.getColor("images/ams/ams1.jpg");
-console.log(newColor);
+
+// var newColor = colorThief.getColor("images/ams/ams1.jpg");
+// console.log(newColor);
+
 // function drawImageFromWebUrl(sourceurl){
 //       var img = new Image();
 //       img.addEventListener("load", function () {
@@ -119,14 +122,14 @@ console.log(newColor);
 //     document.getElementById("block1").style.backgroundColor = hex;
 // },false);
 
-// var verifyDark = getElementsByClassName("body"); 
+// // var verifyDark = getElementsByClassName("body"); 
 
-$('#dark').click(function() {
-    $("body").css('color', 'red');
-    $("a").css('color', 'red');
-    $("body").css('backgroundColor', 'black');
+// $('#dark').click(function() {
+//     $("body").css('color', 'red');
+//     $("a").css('color', 'red');
+//     $("body").css('backgroundColor', 'black');
 
-});
+// });
 
 
 

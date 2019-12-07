@@ -13,9 +13,11 @@ section {
   align-items: center;
   alignment-baseline: central;
   align-self: center;
-  display: block;
 }
 
+.palette {
+  display: block;
+}
 
 /*dark mode button setting*/
 

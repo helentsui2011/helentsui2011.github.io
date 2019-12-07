@@ -35,7 +35,6 @@ $('.dark').click(function() {
     });
 
 // generate color palette
-
 (function () {
     'use strict';
     

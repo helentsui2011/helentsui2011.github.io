@@ -8,10 +8,13 @@ body {
 
 /*attributes for color palette*/
 
-section li {
+section {
   align-content: center;
   align-items: center;
   justify-content: center;
+  display: table-cell;
+  text-align: center;
+  vertical-align: middle;
 }
 
 ul {

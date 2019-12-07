@@ -1,6 +1,3 @@
-
-
-
 body {
     font-family: 'Work Sans', sans-serif;
     background-color: black;
@@ -8,6 +5,8 @@ body {
     margin: 0;
     padding: 0;
 }
+
+/*attributes for color palette*/
 
 section {
   align-content: center;
@@ -18,12 +17,11 @@ section {
 }
 
 
+/*dark mode button setting*/
 
 #dark {
   text-decoration: none;
-
 }
-
 
 button {
   margin-top: 16px;
@@ -47,7 +45,6 @@ li a { 
     color: white;
     float: right;
 }
-
 
 a {
     text-decoration: none;
@@ -87,7 +84,6 @@ header {
   display: flex
 }
 
-
 .home-img {
   width: 100%;
   display: inline;
@@ -99,6 +95,7 @@ header {
   opacity: 0.8;
 }
 
+/*project title*/
 
 .text-left {
   position: absolute;
@@ -109,6 +106,8 @@ header {
   background-color: black;
   padding: 10px;
 }
+
+/*image gallery in three columns*/
 
 .column {
   flex: 33%;

@@ -4,16 +4,12 @@ var modalImg = document.getElementById("expandedImg");
 
 
 document.addEventListener('DOMContentLoaded', function() {
-
     // click x to escape modal view
     var span = document.getElementsByClassName("close")[0];
     span.onclick = function() { 
         $('#myModal').css("display", "none");
     }
-
-
 });
-
 
 
 // lightbox for enlarge photographs
@@ -23,7 +19,6 @@ function lightbox(imgs) {
     modalImg.src = imgs.src;
     captionText.innerHTML = imgs.alt;
 }
-
 
 
 // switch between dark and light mode! 
@@ -39,6 +34,7 @@ $('.dark').click(function() {
         }
     });
 
+// generate color palette
 
 (function () {
     'use strict';

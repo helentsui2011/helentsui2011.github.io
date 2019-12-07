@@ -142,7 +142,7 @@ function rgbToHex(r, g, b) {
 // },false);
 
 // switch between dark and light mode! 
-$('#dark').click(function() {
+$('.dark').click(function() {
     if ( $('body').css('background-color') == "rgb(0, 0, 0)") {
         $("body").css('background-color', "white");
         $("body").css('color', 'black');

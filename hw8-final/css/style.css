@@ -8,15 +8,11 @@ body {
 
 /*attributes for color palette*/
 
-section {
+section li {
   align-content: center;
   align-items: center;
   alignment-baseline: central;
   align-self: center;
-}
-
-.palette {
-  display: block;
 }
 
 /*dark mode button setting*/
